@@ -20,7 +20,7 @@ def create_order():
     tye = [1, 2, 3]
     symbol = wbf_config.symbols
     for sym in range(0, len(symbol)):
-        price = float(abs(round(Order().lastprice(symbol[sym]) - round(random.random(), 2), 2)))
+        price = abs(round(Order().lastprice(symbol[sym]) - round(random.random(), 2), 2))
         params = {
             'side': side[0],
             "type": tye[0],
@@ -30,8 +30,8 @@ def create_order():
             "time": Con().now_time(),
             "price": price
         }
-        res = Signature(secret_key).post_sign(wbf_config.typ, params, request_path, host)
-        print('下单响应:{}'.format(res))
+        Signature(secret_key).post_sign(wbf_config.typ, params, request_path, host)
+
         # p = {
         #     "order_id": res['data']['order_id'],
         #     "symbol": symbol[sym],

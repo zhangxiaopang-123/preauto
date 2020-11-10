@@ -20,7 +20,7 @@ def create_order():
     tye = [1, 2, 3]
     symbol = wbf_config.symbols
     for sym in range(0, len(symbol)):
-        price = abs(round(Order().lastprice(symbol[sym]) - round(random.random(), 2), 2))
+        price = float(abs(round(Order().lastprice(symbol[sym]) - round(random.random(), 2), 2)))
         params = {
             'side': side[0],
             "type": tye[0],

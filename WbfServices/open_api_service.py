@@ -36,7 +36,7 @@ class Order:
             result = requests.get(url, params=params)
             # print(result.json())
             if result.status_code == 200:
-                last_price = result.json()['data'][symbol]
+                last_price = float(result.json()['data'][symbol])
                 if last_price is None:
                     return 0
                 else:

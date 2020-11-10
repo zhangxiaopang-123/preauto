@@ -72,7 +72,6 @@ class Signature:
             print('response-code:{}'.format(res))
             if res.status_code == 200:
                 r = res.json()
-                print('下单响应:{}'.format(r))
                 return r
 
         except Exception as e:

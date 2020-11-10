@@ -40,10 +40,10 @@ class Order:
                 if last_price is None:
                     return 0
                 else:
-                    print(last_price)
+                    print(type(last_price))
                     return last_price
         except Exception as e:
-            # print("error:{}".format(e))
+            print("error:{}".format(e))
             Con().return_log(params, url, e)
 
     def order_place(self, types, p, secret_key):

@@ -31,13 +31,13 @@ def create_order():
         }
         res = Signature(secret_key).post_sign(wbf_config.typ, params, request_path, host)
         print('下单响应:{}'.format(res))
-        p = {
-            "order_id": res['data']['order_id'],
-            "symbol": symbol[sym],
-            "api_key": api_key,
-            "time": Con().now_time()
-        }
-        Order().order_cancel(wbf_config.typ, p, secret_key)
+        # p = {
+        #     "order_id": res['data']['order_id'],
+        #     "symbol": symbol[sym],
+        #     "api_key": api_key,
+        #     "time": Con().now_time()
+        # }
+        # Order().order_cancel(wbf_config.typ, p, secret_key)
 
 
 if __name__ == '__main__':

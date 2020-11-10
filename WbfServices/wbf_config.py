@@ -8,17 +8,18 @@ basedir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 env_name = 'stg'
 sex = 0
 symbol = 'zhfusdt'
-symbols = [
-    'oxeusdt','xdcusdt','scusdt','wbiusdt','vscusdt','xdusdt','atomusdt','ptocusdt','vrdusdt','btcvusdt',
-    'myusdt','cs3usdt','ggausdt','btrusdt','atcusdt','cs2usdt','ttmusdt','acdusdt','vipusdt','ljbusdt',
-    'ggbusdt','ystusdt','ccmusdt','dscusdt','aplusdt','xrpusdt','aacusdt','oneusdt','swcusdt','diausdt',
-    'wbbusdt','bchusdt','ltcusdt','etcusdt','ethusdt','batusdt','eosusdt','vcceth','ttmeth','ldseth',
-    'eoseth','dscbtc','timebtc','ltcbtc','ethbtc','zrxbtc','eosbtc','batbtc','dgdbtc','mywt','btcvdusd',
-    'usdtdusd','ilcusdt','btcwt','www22usdt','bntusdt','www22btc','www22eth','www22dusd','etdogusdt',
-    'wptusdt','fcsusdt','ldsusdt','ineusdt','keousdt','tngusdt','cs1usdt','nbcusdt','mwdusdt','crlusdt',
-    'cwcusdt','www22wt','eoswt','gntbtc','linkbtc','omgbtc','powrbtc','waxbtc','zilbtc','bateth','zrxeth',
-    'dgdeth','gnteth','ineeth','linketh','manaeth','omgeth','powreth','waxeth','zileth','bpayusdt','btcdusd','ethdusd'
-           ]
+# symbols = [
+#     'oxeusdt','xdcusdt','scusdt','wbiusdt','vscusdt','xdusdt','atomusdt','ptocusdt','vrdusdt','btcvusdt',
+#     'myusdt','cs3usdt','ggausdt','btrusdt','atcusdt','cs2usdt','ttmusdt','acdusdt','vipusdt','ljbusdt',
+#     'ggbusdt','ystusdt','ccmusdt','dscusdt','aplusdt','xrpusdt','aacusdt','oneusdt','swcusdt','diausdt',
+#     'wbbusdt','bchusdt','ltcusdt','etcusdt','ethusdt','batusdt','eosusdt','vcceth','ttmeth','ldseth',
+#     'eoseth','dscbtc','timebtc','ltcbtc','ethbtc','zrxbtc','eosbtc','batbtc','dgdbtc','mywt','btcvdusd',
+#     'usdtdusd','ilcusdt','btcwt','www22usdt','bntusdt','www22btc','www22eth','www22dusd','etdogusdt',
+#     'wptusdt','fcsusdt','ldsusdt','ineusdt','keousdt','tngusdt','cs1usdt','nbcusdt','mwdusdt','crlusdt',
+#     'cwcusdt','www22wt','eoswt','gntbtc','linkbtc','omgbtc','powrbtc','waxbtc','zilbtc','bateth','zrxeth',
+#     'dgdeth','gnteth','ineeth','linketh','manaeth','omgeth','powreth','waxeth','zileth','bpayusdt','btcdusd','ethdusd'
+#            ]
+symbols = ['eosusdt']
 step = 'step0'
 typ = 'old'
 region = symbol + 'OrderSeq'

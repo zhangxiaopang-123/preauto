@@ -32,7 +32,7 @@ def create_order():
             "price": price
         }
         res = Signature(secret_key).post_sign(wbf_config.typ, params, request_path, host)
-        print('下单响应', res)
+        print('下单响应:{}'.format(res))
         # p = {
         #     "order_id": res['data']['order_id'],
         #     "symbol": symbol[sym],

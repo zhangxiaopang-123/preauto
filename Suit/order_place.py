@@ -29,7 +29,7 @@ def create_order():
             "symbol": symbol[sym],
             "api_key": api_key,
             "time": Con().now_time(),
-            "price": str(price)
+            "price": price
         }
         res = Signature(secret_key).post_sign(wbf_config.typ, params, request_path, host)
         print('下单响应:{}'.format(res))

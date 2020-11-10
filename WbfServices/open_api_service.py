@@ -37,8 +37,11 @@ class Order:
             # print(result.json())
             if result.status_code == 200:
                 last_price = result.json()['data'][symbol]
-                print(last_price)
-                return last_price
+                if last_price is None:
+                    return 0
+                else:
+                    print(last_price)
+                    return last_price
         except Exception as e:
             # print("error:{}".format(e))
             Con().return_log(params, url, e)
